@@ -23,7 +23,7 @@
         .hero {
             background: linear-gradient(135deg, #005baa, #0088cc);
             color: white;
-            padding: 20px 20px;
+            padding: 10px 10px;
             text-align: center;
         }
 
@@ -44,14 +44,6 @@
             margin: 40px auto;
         }
 
-
-        .profil p {
-            font-size: 16px;
-            line-height: 1.8;
-            text-align: justify;
-            
-        }
-
         
         .judul-prodi {
             text-align: center;
@@ -62,7 +54,7 @@
 
         .prodi-container {
             display: flex;
-            gap: 20px;
+            gap: 10px;
             flex-wrap: wrap;
         }
 
@@ -75,19 +67,7 @@
             text-align: center;
         }
 
-        .icon {
-            width: 65px;
-            height: 65px;
-            margin: 0 auto 20px;
-            border-radius: 50%;
-            background-color: #e3f2fd;
-            color: #005baa;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            font-weight: bold;
-        }
+
 
         .prodi h3 {
             color: #005baa;
@@ -127,9 +107,6 @@
         <div class="hero">
 
             <h1>Politeknik Negeri Malang</h1>
-
-            <div class="garis"></div>
-
 
         </div>
 

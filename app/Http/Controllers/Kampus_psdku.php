@@ -18,6 +18,7 @@ class Kampus_psdku extends Controller
             "D-IV Manajemen Akuntansi"
         ];
 
+
         return view('kampuspsdku', compact(
             'namaKampus',
             'deskripsi',
