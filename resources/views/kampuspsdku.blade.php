@@ -4,17 +4,23 @@
 
 @section('content')
 
-<div class="container">
+<div class="container py-4">
 
-    <div class="box" id="profil">
+```
+<!-- Profil Kampus -->
+<div class="card shadow-sm border-0 mb-4" id="profil">
 
-        <h2>Profil Kampus</h2>
+    <div class="card-body p-4">
 
-        <p>
+        <h2 class="card-title mb-3">
+            Profil Kampus
+        </h2>
+
+        <p class="card-text">
             {{ $deskripsi }}
         </p>
 
-        <p>
+        <p class="card-text">
             Kampus ini menjadi tempat bagi mahasiswa untuk
             mendapatkan pendidikan dan mengembangkan keterampilan
             sesuai dengan bidang yang dipelajari.
@@ -22,23 +28,41 @@
 
     </div>
 
+</div>
 
-    <div class="box" id="prodi">
 
-        <h2>Program Studi</h2>
+<!-- Program Studi -->
+<div class="card shadow-sm border-0" id="prodi">
 
-        <div class="prodi-container">
+    <div class="card-body p-4">
+
+        <h2 class="mb-4">
+            Program Studi
+        </h2>
+
+        <div class="row g-4">
 
             @foreach ($programStudi as $prodi)
 
-                <div class="prodi">
+                <div class="col-md-4">
 
-                    <h3>{{ $prodi }}</h3>
+                    <div class="card h-100 shadow-sm">
 
-                    <p>
-                        Program studi yang memberikan pembelajaran
-                        sesuai dengan bidang yang dipelajari mahasiswa.
-                    </p>
+                        <div class="card-body">
+
+                            <h3 class="h5 card-title">
+                                {{ $prodi }}
+                            </h3>
+
+                            <p class="card-text">
+                                Program studi yang memberikan
+                                pembelajaran sesuai dengan bidang
+                                yang dipelajari mahasiswa.
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -47,6 +71,9 @@
         </div>
 
     </div>
+
+</div>
+```
 
 </div>
 
